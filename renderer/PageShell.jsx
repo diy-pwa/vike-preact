@@ -17,6 +17,9 @@ const PageShell = function ({ children, pageContext }) {
           <Link className="navitem" href="/about">
             About
           </Link>
+          <Link className="navitem" href="/contact">
+            Contact
+          </Link>
         </Sidebar>
         <Content>{children}</Content>
       </Layout>
