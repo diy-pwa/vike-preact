@@ -1,3 +1,7 @@
+export const documentProps = {
+  title: 'About us',
+  description: 'About info here'
+}
 export default Page
 
 import './code.css'

@@ -1,3 +1,7 @@
+export const documentProps = {
+  title: 'Demo'
+}
+
 export default Page
 
 import { Counter } from './Counter'

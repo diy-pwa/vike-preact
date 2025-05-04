@@ -15,7 +15,8 @@ async function onRenderHtml(pageContext) {
   )
 
   // See https://vike.dev/head
-  const { documentProps } = pageContext
+  const { documentProps } = pageContext.exports;
+  console.log(documentProps);
   const title = (documentProps && documentProps.title) || 'Vite SSR app'
   const desc = (documentProps && documentProps.description) || 'App using Vite + Vike'
 
@@ -25,6 +26,7 @@ async function onRenderHtml(pageContext) {
         <meta charset="UTF-8" />
         <link rel="icon" href="${logoUrl}" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Rich was here -->
         <meta name="description" content="${desc}" />
         <title>${title}</title>
       </head>
